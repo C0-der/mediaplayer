@@ -337,6 +337,7 @@ public class App extends Application {
         }
     }
 
+    // --- Cleanup & Reset Methods ---
     private void stopAndDisposePlayer() {
         if (mediaPlayer != null) {
             mediaPlayer.stop();
