@@ -1,0 +1,124 @@
+/* Root Container */
+.root-pane {
+    -fx-background-color: #121212;
+}
+
+/* Media Player Screen */
+.media-container {
+    -fx-background-color: #000000;
+}
+
+/* Control Bar at Bottom */
+.control-bar {
+    -fx-background-color: #1E1E1E;
+    -fx-border-color: #2A2A2A transparent transparent transparent;
+    -fx-border-width: 1px;
+}
+
+/* Playlist Sidebar */
+.sidebar {
+    -fx-background-color: #181818;
+    -fx-border-color: transparent transparent transparent #2A2A2A;
+    -fx-border-width: 1px;
+}
+
+.sidebar-header {
+    -fx-text-fill: #A7A7A7;
+    -fx-font-weight: bold;
+    -fx-font-size: 11px;
+    -fx-padding: 0 0 4 0;
+}
+
+.volume-label {
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+/* Media Action Buttons */
+.icon-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-padding: 6 10;
+}
+
+.icon-button:hover {
+    -fx-background-color: #2A2A2A;
+    -fx-background-radius: 4px;
+}
+
+/* Add & Remove Action Buttons */
+.btn-primary {
+    -fx-background-color: #1DB954;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 4px;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #1ed760;
+}
+
+.btn-danger {
+    -fx-background-color: #E91E63;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-background-radius: 4px;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #f44336;
+}
+
+/* ListView / Playlist */
+.list-view {
+    -fx-background-color: #121212;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.list-cell {
+    -fx-background-color: #121212;
+    -fx-text-fill: #B3B3B3;
+    -fx-padding: 8 10;
+    -fx-font-size: 13px;
+}
+
+.list-cell:hover {
+    -fx-background-color: #282828;
+    -fx-text-fill: #FFFFFF;
+}
+
+.list-cell:filled:selected {
+    -fx-background-color: #282828;
+    -fx-text-fill: #1DB954;
+    -fx-font-weight: bold;
+}
+
+/* Volume Slider */
+.slider .track {
+    -fx-background-color: #535353;
+}
+
+.slider .thumb {
+    -fx-background-color: #FFFFFF;
+}
+
+.slider .range {
+    -fx-background-color: #1DB954;
+}
+/* Audio Visualizer Overlay / Container */
+.visualizer-pane {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+
+.visualizer-bar {
+    -fx-fill: linear-gradient(to top, #1DB954, #1ed760);
+    -fx-arc-width: 4;
+    -fx-arc-height: 4;
+}
