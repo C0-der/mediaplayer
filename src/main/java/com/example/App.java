@@ -194,11 +194,11 @@ public class App extends Application {
             }
         });
 
-        Button addButton = new Button("+ Add Media");
+        Button addButton = new Button("Add Media");
         addButton.setMaxWidth(Double.MAX_VALUE);
         addButton.getStyleClass().add("btn-primary");
 
-        Button removeButton = new Button("- Remove");
+        Button removeButton = new Button("Remove");
         removeButton.setMaxWidth(Double.MAX_VALUE);
         removeButton.getStyleClass().add("btn-danger");
 
