@@ -113,11 +113,11 @@ public class App extends Application {
     }
 
     private VBox createControlBar(Stage stage) {
-        // Playback Buttons
-        Button prevBtn = createIconButton("/image/previous.png", "⏮");
-        Button playBtn = createIconButton("/image/play.png", "⏯");
-        Button stopBtn = createIconButton("/image/stop.png", "⏹");
-        Button nextBtn = createIconButton("/image/next.png", "⏭");
+        // Playback Buttons (Passing dummy empty string since fallback is removed)
+        Button prevBtn = createIconButton("/image/previous.png");
+        Button playBtn = createIconButton("/image/play.png");
+        Button stopBtn = createIconButton("/image/stop.png");
+        Button nextBtn = createIconButton("/image/next.png");
 
         prevBtn.setOnAction(e -> playPreviousTrack());
         playBtn.setOnAction(e -> togglePlayPause());
@@ -356,7 +356,7 @@ public class App extends Application {
 
     // --- Helpers & Shortcuts ---
 
-    private Button createIconButton(String resourcePath, String fallbackText) {
+    private Button createIconButton(String resourcePath) {
         Button button = new Button();
         button.setFocusTraversable(false);
         button.getStyleClass().add("icon-button");
@@ -367,8 +367,6 @@ public class App extends Application {
             iconView.setFitWidth(22);
             iconView.setFitHeight(22);
             button.setGraphic(iconView);
-        } else {
-            button.setText(fallbackText);
         }
         return button;
     }
