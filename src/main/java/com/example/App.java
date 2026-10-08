@@ -113,7 +113,7 @@ public class App extends Application {
     }
 
     private VBox createControlBar(Stage stage) {
-        // Playback Buttons (Passing dummy empty string since fallback is removed)
+        // Playback Buttons 
         Button prevBtn = createIconButton("/image/previous.png");
         Button playBtn = createIconButton("/image/play.png");
         Button stopBtn = createIconButton("/image/stop.png");
